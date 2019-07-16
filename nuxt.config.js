@@ -20,6 +20,9 @@ export default {
         ],
         link: []
     },
+    icon: {
+        iconFileName: 'favicon.png'
+    },
     modules: [
         '@nuxtjs/axios',
         '@nuxtjs/pwa'
