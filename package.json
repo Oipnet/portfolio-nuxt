@@ -1,0 +1,22 @@
+{
+  "name": "portfolio-nuxt-2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "generate": "nuxt generate",
+    "dev": "nuxt dev"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@nuxtjs/pwa": "^3.0.0-beta.16",
+    "@nuxtjs/tailwindcss": "^1.1.0",
+    "node-sass": "^4.12.0",
+    "nuxt": "^2.8.1",
+    "sass-loader": "^7.1.0",
+    "vue-lazy-hydration": "^1.0.0-beta.9",
+    "@nuxtjs/axios": "^5.5.4"
+  }
+}
