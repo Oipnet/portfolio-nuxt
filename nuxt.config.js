@@ -21,7 +21,8 @@ export default {
         link: []
     },
     modules: [
-        '@nuxtjs/axios'
+        '@nuxtjs/axios',
+        '@nuxtjs/pwa'
     ],
     devModules: [
       '@nuxtjs/tailwindcss'
