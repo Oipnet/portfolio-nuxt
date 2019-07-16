@@ -1,7 +1,9 @@
 <template>
   <div>
     <navbar />
-    <nuxt />
+    <div class="container">
+      <nuxt />
+    </div>
   </div>
 </template>
 
@@ -14,3 +16,9 @@ export default {
   }
 }
 </script>
+
+<style lang="scss" scoped>
+  .container {
+    @apply container mx-auto;
+  }
+</style>

@@ -1,6 +1,6 @@
 <template>
     <LazyHydrate when-idle>
-        <nav class="flex items-center justify-between flex-wrap bg-teal-500 p-6">
+        <nav class="navbar">
             <div class="navbar-item">OIPNET</div>
             <div class="block md:hidden">
                 <button 
@@ -46,12 +46,16 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+    .navbar {
+        @apply flex items-center justify-between flex-wrap bg-teal-700 p-6;
+    }
+
     .navbar-menu {
         @apply w-full;
     }
 
     .navbar-toggler {
-        @apply flex items-center px-3 py-2 border rounded text-teal-200 border-teal-400;
+        @apply flex items-center px-3 py-2 border rounded text-teal-100 border-teal-400;
 
         &:hover {
             @apply text-white border-white;
@@ -63,7 +67,7 @@ export default {
     }
 
     .navbar-item {
-        @apply block mt-4 text-teal-200 mr-4;
+        @apply block mt-4 text-teal-100 mr-4;
 
         &:hover {
             @apply text-white;
