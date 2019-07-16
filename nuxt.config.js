@@ -33,7 +33,7 @@ export default {
     build: {
         postcss: {
             plugins: {
-            tailwindcss: './tailwind.config.js'
+            tailwindcss: './config/tailwind.config.js'
             }
         },
         /*
