@@ -1,5 +1,5 @@
 <template>
-    <LazyHydrate ssr-only>
+    <LazyHydrate when-idle>
         <nav class="flex items-center justify-between flex-wrap bg-teal-500 p-6">
             <div class="navbar-item">OIPNET</div>
             <div class="block md:hidden">
