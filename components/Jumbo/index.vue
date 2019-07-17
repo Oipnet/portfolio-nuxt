@@ -1,16 +1,29 @@
 <template>
-    <section class="jumbotron">
-        <div class="jumbotron-body">
-            <h1>Arnaud POINTET - Developpeur web</h1>
-            <p>
-                Création de site web sur mesure. Expert Laravel / VueJs
-            </p>
-            <NuxtLink to="/contact" class="">Demander un devis</NuxtLink>
-        </div>
-        <div class="jumbotron-image" style="background-image: url('https://picsum.photos/id/1003/430/200')" title="Woman holding a mug">
-        </div>
-    </section>
+    <LazyHydrate when-hidle>
+        <section class="jumbotron">
+            <div class="jumbotron-body">
+                <h1>Arnaud POINTET - Developpeur web</h1>
+                <p>
+                    Création de site web sur mesure. Expert Laravel / VueJs
+                </p>
+                <NuxtLink to="/contact" class="">Demander un devis</NuxtLink>
+            </div>
+            <div class="jumbotron-image" style="background-image: url('https://picsum.photos/id/1003/430/200')" title="Woman holding a mug">
+            </div>
+        </section>
+    </LazyHydrate>
 </template>
+
+<script>
+import LazyHydrate from 'vue-lazy-hydration'
+
+export default {
+    components: {
+        LazyHydrate
+    }    
+}
+</script>
+
 
 <style lang="scss" scoped>
     .jumbotron {
@@ -48,7 +61,7 @@
 
     @screen md {
         .jumbotron {
-            @apply max-w-full flex flex-row;
+            @apply max-w-full flex flex-row h-64;
 
             & .jumbotron-body {
                 @apply w-2/3 border-r-0 rounded-b-none rounded-l order-first;
