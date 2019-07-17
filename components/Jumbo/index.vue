@@ -7,7 +7,7 @@
             </p>
             <NuxtLink to="/contact" class="">Demander un devis</NuxtLink>
         </div>
-        <div class="h-56 lg:h-auto lg:w-1/3 flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-br text-center overflow-hidden" style="background-image: url('https://picsum.photos/id/237/500/150')" title="Woman holding a mug">
+        <div class="h-56 lg:h-auto lg:w-1/3 flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-br text-center overflow-hidden" style="background-image: url('https://picsum.photos/id/1003/430/200')" title="Woman holding a mug">
         </div>
     </section>
 </template>
@@ -33,7 +33,8 @@
                     mx-auto font-bold border-b-2 border-primary-dark;
 
                 &:hover {
-                    @apply border-primary bg-primary-dark
+                    @apply border-primary bg-primary-dark;
+                    transition: background-color 0.5s
                 }
             }
         }
