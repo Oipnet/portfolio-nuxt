@@ -47,7 +47,7 @@ export default {
 
 <style lang="scss" scoped>
     .navbar {
-        @apply flex items-center justify-between flex-wrap bg-teal-700 p-6;
+        @apply flex items-center justify-between flex-wrap bg-white p-6 border-b border-primary;
     }
 
     .navbar-menu {
@@ -55,10 +55,10 @@ export default {
     }
 
     .navbar-toggler {
-        @apply flex items-center px-3 py-2 border rounded text-teal-100 border-teal-400;
+        @apply flex items-center px-3 py-2 border rounded text-primary border-primary;
 
         &:hover {
-            @apply text-white border-white;
+            @apply text-primary-dark border-primary-dark;
         }
 
         svg {
@@ -67,10 +67,10 @@ export default {
     }
 
     .navbar-item {
-        @apply block mt-4 text-teal-100 mr-4;
+        @apply block mt-4 text-primary mr-4 font-bold;
 
         &:hover {
-            @apply text-white;
+            @apply text-primary-dark;
         }
     }
 
