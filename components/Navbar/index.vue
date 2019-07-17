@@ -59,6 +59,7 @@ export default {
 
         &:hover {
             @apply text-primary-dark border-primary-dark;
+            transition: color 0.5s, border-color 0.5s;
         }
 
         svg {
@@ -71,6 +72,7 @@ export default {
 
         &:hover {
             @apply text-primary-dark;
+            transition: color 0.5s;
         }
     }
 
