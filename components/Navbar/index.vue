@@ -1,7 +1,7 @@
 <template>
     <LazyHydrate when-idle>
         <nav class="navbar">
-            <div class="navbar-item">OIPNET</div>
+            <div class="navbar-item logo">OIPNET</div>
             <div class="block md:hidden">
                 <button 
                     class="navbar-toggler"
@@ -67,8 +67,12 @@ export default {
         }
     }
 
+    .logo {
+        @apply mt-0;
+    }
+
     .navbar-item {
-        @apply block mt-4 text-primary mr-4 font-bold;
+        @apply block align-middle text-primary mt-4 mr-4 font-bold;
 
         &:hover {
             @apply text-primary-dark;
