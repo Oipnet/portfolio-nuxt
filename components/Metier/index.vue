@@ -1,8 +1,10 @@
 <template>
     <LazyHydrate when-visible>
         <section class="flex mt-12 w-full flex-wrap">
-        <div class="w-1/3">
-            ICON
+        <div class="w-1/3 text-center flex">
+            <div class="border-2 border-primary-dark rounded-full h-20 w-20 flex items-center justify-center self-center mx-auto">
+<font-awesome-icon :icon="['fas', 'cogs']" class="text-4xl text-primary"/>
+            </div>
         </div>
         <div class="w-2/3">
             <h2 class="text-4xl uppercase w-auto">Mon metier</h2>

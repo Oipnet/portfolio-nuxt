@@ -64,7 +64,7 @@ export default {
             @apply max-w-full flex flex-row h-64;
 
             & .jumbotron-body {
-                @apply w-2/3 border-r-0 rounded-b-none rounded-l order-first;
+                @apply w-2/3 border-r-0 rounded-b-none rounded-t-none rounded-bl order-first;
                 order: -1;
 
                 & a {

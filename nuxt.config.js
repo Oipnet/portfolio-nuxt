@@ -30,8 +30,22 @@ export default {
         charset: 'utf-8'
     },
     modules: [
-        '@nuxtjs/axios',
-        '@nuxtjs/pwa'
+      '@nuxtjs/axios',
+      '@nuxtjs/pwa',
+      [
+        'nuxt-fontawesome', {
+          imports: [
+            {
+              set: '@fortawesome/free-solid-svg-icons',
+              icons: ['fas']
+            },
+            {
+              set:'@fortawesome/free-brands-svg-icons',
+              icons: ['fab']
+            }
+          ]
+        }
+      ]
     ],
     devModules: [
       '@nuxtjs/tailwindcss'
