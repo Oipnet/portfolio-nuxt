@@ -11,7 +11,8 @@ branches:
   - master
 
 env:
-  - SOCKET_HOST_URL=https://porfolio-bot.herokuapp.com:6666
+  global:
+    - SOCKET_HOST_URL=https://porfolio-bot.herokuapp.com:6666
 
 install:
   - npm install
