@@ -30,6 +30,7 @@ export default {
         charset: 'utf-8'
     },
     modules: [
+      '@nuxtjs/dotenv',
       '@nuxtjs/axios',
       '@nuxtjs/pwa',
       [
@@ -47,6 +48,9 @@ export default {
         }
       ]
     ],
+    plugins: [
+      '~/plugins/socket.io.js'
+    ],
     devModules: [
       '@nuxtjs/tailwindcss'
     ],
@@ -55,15 +59,16 @@ export default {
       cssPath: '~/assets/css/tailwind.css'
     },
     build: {
-        postcss: {
-            plugins: {
-            tailwindcss: './config/tailwind.config.js'
-            }
-        },
-        /*
-        ** You can extend webpack config here
-        */
-        extend(config, ctx) {
-        }
+      vendor: ['socket.io-client'],
+      postcss: {
+          plugins: {
+          tailwindcss: './config/tailwind.config.js'
+          }
+      },
+      /*
+      ** You can extend webpack config here
+      */
+      extend(config, ctx) {
+      }
     }
 }

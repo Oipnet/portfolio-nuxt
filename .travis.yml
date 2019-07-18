@@ -12,6 +12,7 @@ branches:
 
 install:
   - npm install
+  - export SOCKET_HOST_URL=https://porfolio-bot.herokuapp.com:9999/
   - npm run generate
 
 script:
