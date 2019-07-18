@@ -59,7 +59,12 @@ export default {
       cssPath: '~/assets/css/tailwind.css'
     },
     build: {
-      vendor: ['socket.io-client'],
+      vendor: [
+        'socket.io-client',
+        '@fortawesome/fontawesome',
+        '@fortawesome/fontawesome-free-solid',
+        '@fortawesome/fontawesome-free-brands'
+      ],
       postcss: {
           plugins: {
           tailwindcss: './config/tailwind.config.js'
