@@ -2,7 +2,7 @@
     <LazyHydrate when-hidle>
         <section class="jumbotron">
             <div class="jumbotron-body">
-                <h1>Arnaud POINTET - Developpeur web</h1>
+                <h1>Arnaud POINTET - Developpeur web - updated</h1>
                 <p>
                     Création de site web sur mesure. Expert Laravel / VueJs
                 </p>
