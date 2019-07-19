@@ -58,17 +58,17 @@ export default {
       configPath: '~/config/tailwind.config.js',
       cssPath: '~/assets/css/tailwind.css'
     },
+    purgeCSS: {
+      whitelistPatterns: [/^fa-/, /^svg-/],
+    },
     build: {
       vendor: [
-        'socket.io-client',
-        '@fortawesome/fontawesome',
-        '@fortawesome/fontawesome-free-solid',
-        '@fortawesome/fontawesome-free-brands'
+        'socket.io-client'
       ],
       postcss: {
-          plugins: {
+        plugins: {
           tailwindcss: './config/tailwind.config.js'
-          }
+        }
       },
       /*
       ** You can extend webpack config here
